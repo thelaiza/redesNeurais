@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Classificador de Dígitos — MLP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Classificação de Dígitos Manuscritos</h1>
+        <p>Desenhe um número de 0 a 9 no painel abaixo:</p>
+        
+        <div class="interface">
+            <div class="canvas-area">
+                <canvas id="paintCanvas" width="280" height="280"></canvas>
+                <div class="controles">
+                    <button id="clearBtn">Limpar (Esc)</button>
+                    <button id="predictBtn">Classificar (Espaço)</button>
+                </div>
+            </div>
+            
+            <div class="result-area">
+                <h2>Resultado</h2>
+                <div id="mainResult">-</div>
+                <div id="confidence">Confiança: --%</div>
+                
+                <div class="chart-bars" id="chartBars">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/canvas.js') }}"></script>
+</body>
+</html>

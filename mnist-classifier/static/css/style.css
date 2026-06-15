@@ -1,0 +1,101 @@
+body {
+    background-color: #121214;
+    color: #e1e1e6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.app-container {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.interface {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 30px;
+    background: #202024;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+canvas {
+    background-color: #000000;
+    border: 3px solid #4d4d57;
+    border-radius: 4px;
+    cursor: crosshair;
+}
+
+.controles {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: #00875f;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #00b37e;
+}
+
+#clearBtn {
+    background-color: #7c2d12;
+}
+#clearBtn:hover {
+    background-color: #9a3412;
+}
+
+.result-area {
+    width: 300px;
+}
+
+#mainResult {
+    font-size: 72px;
+    font-weight: bold;
+    color: #00b37e;
+    margin: 10px 0;
+}
+
+.bar-container {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+    font-family: monospace;
+}
+
+.bar-label {
+    width: 20px;
+}
+
+.bar-outer {
+    flex: 1;
+    background-color: #29292e;
+    height: 12px;
+    margin: 0 10px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.bar-inner {
+    background-color: #00b37e;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease-out;
+}
